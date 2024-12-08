@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <section class="flex">
+            <div id="menu-btn" class="fas fa-bars-staggered"></div>
+
+
+            <a href="index.html" class="logo"><i class="fas fa-briefcase"></i>
+                FreelanceHunt.</a>
+
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="jobs.html">Jobs</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="login.html">Account</a>
+            </nav>
+
+            <button id="theme-switch">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="undefined">
+                    <path
+                        d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="undefined">
+                    <path
+                        d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z" />
+                </svg>
+
+
+            </button>
+
+        </section>
+    </header>
+
+
+    <section class="job-filter">
+        <h1 class="heading">filter jobs</h1>
+        <form action="" method="post">
+            <div class="flex">
+                <div class="box">
+                    <p>job title <span>*</span></p>
+                    <input type="text" name="title" class="input" placeholder="Keyword,Category or company" required
+                        maxlength="20">
+                </div>
+                <div class="box">
+                    <p>Job Location</p>
+                    <input type="text" name="location" class="input" placeholder="locality or state" required
+                        maxlength="20 ">
+                </div>
+            </div>
+            <div class="dropdown-container">
+
+                <div class="dropdown">
+                    <input type="text" readonly placeholder="date posted" name="date" maxlength="20" class="output">
+                    <div class="lists">
+                        <p class="items">today</p>
+                        <p class="items">3 days ago</p>
+                        <p class="items">7 days ago</p>
+                        <p class="items">10 days ago</p>
+                        <p class="items">15 days ago</p>
+                        <p class="items">30 days ago</p>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <input type="text" readonly placeholder="work shifts" name="date" maxlength="20" class="output">
+                    <div class="lists">
+                        <p class="items">Full-Time</p>
+                        <p class="items">On-Shift-basis</p>
+                        <p class="items">Temporary</p>
+                    </div>
+                </div>
+
+
+                <div class="dropdown">
+                    <input type="text" readonly placeholder="Estimated Payout" name="date" maxlength="20"
+                        class="output">
+                    <div class="lists">
+                        <p class="items">2k or less</p>
+                        <p class="items">2k - 5k</p>
+                        <p class="items">5k - 10k</p>
+                        <p class="items">10k - 15k</p>
+                        <p class="items">15k - 20k</p>
+                        <p class="items">20k - 25k</p>
+                        <p class="items">25k - 30k</p>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </section>
+
+
+    <section class="jobs-container">
+        <h1 class="section-title">All jobs</h1>
+        <div class="box-container">
+
+            <div class="box">
+                <div class="company">
+                    <img src="images\HTML5_logo_and_wordmark.svg.png" alt="">
+                    <div>
+                        <h3>IT Infosys Co.</h3>
+                        <p>2 days ago</p>
+                    </div>
+                </div>
+                <h3 class="job-title">freelancer - web developer</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i>
+                    <span>mumbai, india</span>
+                </p>
+                <div class="tags">
+                    <p><i class="fas fa-indian-rupee-sign"></i><span>6k - 10k</span></p>
+                    <p><i class="fas fa-briefcase"></i><span>Full-Time</span></p>
+                    <p><i class="fas fa-clock"></i><span>6months on Contract</span></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="veiw_job.html" class="btn">veiw details</a>
+                    <button type="submit" class="far fa-heart" name="save"></button>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="company">
+                    <img src="images\CSS3_logo.svg.png" alt="">
+                    <div>
+                        <h3>All Media ltd.</h3>
+                        <p>4 days ago</p>
+                    </div>
+                </div>
+                <h3 class="job-title">qualified developer</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i>
+                    <span>pune, india</span>
+                </p>
+                <div class="tags">
+                    <p><i class="fas fa-indian-rupee-sign"></i><span>9000</span></p>
+                    <p><i class="fas fa-briefcase"></i><span>Full-Time</span></p>
+                    <p><i class="fas fa-clock"></i><span>7months on Contract</span></p>
+                    <div class="flex-btn">
+                        <a href="veiw_job.html" class="btn">veiw details</a>
+                        <button type="submit" class="far fa-heart" name="save"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="company">
+                    <img src="images\logo-javascript.svg" alt="">
+                    <div>
+                        <h3>Dinka Jester Software sol.</h3>
+                        <p>posted today</p>
+                    </div>
+                </div>
+                <h3 class="job-title">javascript - backend developer</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i>
+                    <span>bengaluru, india</span>
+                </p>
+                <div class="tags">
+                    <p><i class="fas fa-indian-rupee-sign"></i><span>10k - 15k</span></p>
+                    <p><i class="fas fa-briefcase"></i><span>Full-Time</span></p>
+                    <p><i class="fas fa-clock"></i><span>12months on Contract</span></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="veiw_job.html" class="btn">veiw details</a>
+                    <button type="submit" class="far fa-heart" name="save"></button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="company">
+                    <img src="images\logo-sass2.svg" alt="">
+                    <div>
+                        <h3>Game-Nation</h3>
+                        <p>12 days ago</p>
+                    </div>
+                </div>
+                <h3 class="job-title">freelancer - front-end designer</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i>
+                    <span>chennai, india</span>
+                </p>
+                <div class="tags">
+                    <p><i class="fas fa-indian-rupee-sign"></i><span>17k - 20k</span></p>
+                    <p><i class="fas fa-briefcase"></i><span>Full-Time</span></p>
+                    <p><i class="fas fa-clock"></i><span>6months on Contract</span></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="veiw_job.html" class="btn">veiw details</a>
+                    <button type="submit" class="far fa-heart" name="save"></button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="company">
+                    <img src="images\jquery-6.svg" alt="">
+                    <div>
+                        <h3>Info Statistica </h3>
+                        <p>2 days ago</p>
+                    </div>
+                </div>
+                <h3 class="job-title">freelancer - junior assistant</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i>
+                    <span>hyderabad, india</span>
+                </p>
+                <div class="tags">
+                    <p><i class="fas fa-indian-rupee-sign"></i><span>6000</span></p>
+                    <p><i class="fas fa-briefcase"></i><span>Temporary</span></p>
+                    <p><i class="fas fa-clock"></i><span>3months on Contract</span></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="veiw_job.html" class="btn">veiw details</a>
+                    <button type="submit" class="far fa-heart" name="save"></button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="company">
+                    <img src="images\php.svg" alt="">
+                    <div>
+                        <h3>Deccan Herald</h3>
+                        <p>17 days ago</p>
+                    </div>
+                </div>
+                <h3 class="job-title">freelancer - backend web developer</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i>
+                    <span>bengaluru, india</span>
+                </p>
+                <div class="tags">
+                    <p><i class="fas fa-indian-rupee-sign"></i><span>17k - 22k</span></p>
+                    <p><i class="fas fa-briefcase"></i><span>Full-Time</span></p>
+                    <p><i class="fas fa-clock"></i><span>6months on Contract</span></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="veiw_job.html" class="btn">veiw details</a>
+                    <button type="submit" class="far fa-heart" name="save"></button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="company">
+                    <img src="images\python-logo.png" alt="">
+                    <div>
+                        <h3>Software Solutions</h3>
+                        <p>1 day ago</p>
+                    </div>
+                </div>
+                <h3 class="job-title">freelancer - Junior Assistant</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i>
+                    <span>patna, india</span>
+                </p>
+                <div class="tags">
+                    <p><i class="fas fa-indian-rupee-sign"></i><span>10k - 20k</span></p>
+                    <p><i class="fas fa-briefcase"></i><span>Full-Time</span></p>
+                    <p><i class="fas fa-clock"></i><span>5months on Contract</span></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="veiw_job.html" class="btn">veiw details</a>
+                    <button type="submit" class="far fa-heart" name="save"></button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="company">
+                    <img src="images\react-logo.svg" alt="">
+                    <div>
+                        <h3>Infosys co.</h3>
+                        <p>22 days ago</p>
+                    </div>
+                </div>
+                <h3 class="job-title">freelancer - Junior Web-Developer (React)</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i>
+                    <span>faridabad, india</span>
+                </p>
+                <div class="tags">
+                    <p><i class="fas fa-indian-rupee-sign"></i><span>19k - 25k</span></p>
+                    <p><i class="fas fa-briefcase"></i><span>Full-Time</span></p>
+                    <p><i class="fas fa-clock"></i><span>7months on Contract</span></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="veiw_job.html" class="btn">veiw details</a>
+                    <button type="submit" class="far fa-heart" name="save"></button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="company">
+                    <img src="images\vuejs-logo.svg" alt="">
+                    <div>
+                        <h3>freelancer-Vuejs API</h3>
+                        <p>22 days ago</p>
+                    </div>
+                </div>
+                <h3 class="job-title">freelancer - Junior Web-Backend</h3>
+                <p class="location"><i class="fas fa-map-marker-alt"></i>
+                    <span>Ernakulam, india</span>
+                </p>
+                <div class="tags">
+                    <p><i class="fas fa-indian-rupee-sign"></i><span>18k - 22k</span></p>
+                    <p><i class="fas fa-briefcase"></i><span>Full-Time</span></p>
+                    <p><i class="fas fa-clock"></i><span>12months on Contract</span></p>
+                </div>
+                <div class="flex-btn">
+                    <a href="veiw_job.html" class="btn">veiw details</a>
+                    <button type="submit" class="far fa-heart" name="save"></button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+
+
+    <footer class="footer">
+        <section class="grid">
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="index.html"><i class="fas fa-angle-right"></i>Home</a>
+                <a href="about.html"><i class="fas fa-angle-right"></i>About</a>
+                <a href="contact.html"><i class="fas fa-angle-right"></i>Contact Us</a>
+                <a href="jobs.html"><i class="fas fa-angle-right"></i>All Jobs</a>
+                <a href="#"><i class="fas fa-angle-right"></i>Filter Search</a>
+            </div>
+
+            <div class="box">
+                <h3>Follow Us: </h3>
+                <a href="#"><i class="fas fa-angle-right"></i>Account</a>
+                <a href="login.html"><i class="fas fa-angle-right"></i>Login</a>
+                <a href="register.html"><i class="fas fa-angle-right"></i>Register Now</a>
+                <a href="#"><i class="fas fa-angle-right"></i>Post Jobs</a>
+                <a href="#"><i class="fas fa-angle-right"></i>Dashboard</a>
+            </div>
+
+            <div class="box">
+                <h3>Follow Us</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+                <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+                <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
+                <a href="#"><i class="fab fa-youtube"></i>youtube</a>
+            </div>
+        </section>
+
+        <div class="credit">
+            &copy; copyright @2024
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="js/script.js"></script>
+    <script>
+
+        let dropdown_items = document.querySelectorAll('.job-filter form .dropdown-container .dropdown .lists .items');
+
+        dropdown_items.forEach(items => {
+            items.onclick = () => {
+                items_parent = items.parentElement.parentElement;
+                let output = items_parent.querySelector('.output');
+                output.value = items.innerText;
+            }
+        });
+    </script>
+
+</body>
+
+</html>
